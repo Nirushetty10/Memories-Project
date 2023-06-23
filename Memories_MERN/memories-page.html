@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories</title>
+    <link rel="stylesheet" href="memories-page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Memories</h1>
+        <div class="button-div">
+          <button class="btns" id="create-btn">Create Memory</button>
+          <button class="btns" id="login-btn" onclick="reDirectPage()">
+            Logout
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="display-container">
+       
+      </div>
+      <div class="card-container card-display">
+        <div class="image-content"><img id="imageEle" src=""></div>
+        <div class="title-content">
+          <h2 id="headEle"></h2>
+        </div>
+        <div class="desc-content">
+          <p id="descEle"></p>
+        </div>
+        <div class="bottom-content">
+          <div id="date-memory">
+            <h4 id="dateEle"></h4>
+          </div>
+          <div id="empty-heart"><i class="fa-regular fa-heart" style="color: #1d1e20;"></i></div>
+          <div id="delete-button"><i class="fa-solid fa-trash"></i></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="singup-div">
+          <div class="signup-head">
+            <h2>Create your Memory</h2>
+          </div>
+          <form method="post">
+            <div>
+              <label for="title-input">Title</label>
+              <input type="text" name="title-input" id="title-input" />
+            </div>
+            <div>
+              <label for="desc-input">Description</label>
+              <input type="text" name="desc-input" id="desc-input" />
+            </div>
+            <div>
+              <label for="image-input">Image</label>
+              <input
+                type="file"
+                name="image-input"
+                id="image-input"
+                accept=".jpg, .png,"
+                multiple
+              />
+            </div>
+            <div>
+              <label for="date-input">Date</label>
+              <input type="date" name="date-input" id="date-input" />
+            </div>
+            <div>
+              <button type="submit">Create</button>
+              <p id="msgError"></p>
+            </div>
+          </form>
+        </div>
+        <div class="image-div">
+          <img src="side-image.jpg" alt="" />
+          <i class="fa-solid fa-xmark fa-xl exit-icon" onclick="removeForm()"></i>
+        </div>
+        
+      </div>
+
+    </main>
+    <script src="memories-page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+  </body>
+</html>
+
+

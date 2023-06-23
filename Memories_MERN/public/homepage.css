@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    padding: 1rem;
+    background-color: #E1E2F3;
+
+}
+
+nav h1 {
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+}
+
+nav .btns {
+    border: none;
+    background-color: #ffff;
+    border-radius: 7px;
+    width: 8rem;
+    height: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+nav .btns:hover {
+    background-color: rgb(255, 179, 80);
+    color: #ffff;
+    cursor: pointer;
+}
+
+nav .button-div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container {
+    background-color: #E1E2F3;
+    padding-top: 2rem;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.singup-div,
+.image-div {
+    width: 35%;
+    height: 95%;
+
+}
+
+.singup-div {
+    box-shadow: 3px 15px 32px 8px #5c5252;
+}
+
+.image-div {
+    box-shadow: 9px 15px 25px 3px #5c5252;
+}
+
+.singup-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.signup-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+}
+
+.image-div {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.image-div img {
+    width: 95%;
+    height: 95%;
+    border-radius: 2.8em;
+    object-fit: cover;
+}
+
+.singup-div form {
+    height: 80%;
+
+}
+
+.singup-div form>div {
+    margin: 0 3rem;
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.singup-div input,
+button {
+    margin: 0.4rem 0;
+    height: 2.5rem;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.singup-div input {
+    padding: 5px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #9396dd;
+
+}
+
+.singup-div input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px 2px #7c81da;
+}
+
+.singup-div button {
+    border: none;
+    border-radius: 8px;
+    background-color: #5259e7;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.singup-div p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    color: #f80000;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    font-family: Poppins;
+    height: 88vh;
+    width: 100%;
+    position: relative;
+    background-color: #a6a9d8;
+    background-image: linear-gradient(315deg, #7381c9 0%, #8994d6 74%);
+}
+
+
+.draw-div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 40%;
+    background: url("wave3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.home-container button {
+    font-family: Poppins;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: rgb(8, 8, 8);
+    color: #ffff;
+
+}
+#join-btn{
+    background-color: rgb(255, 179, 80);
+    color: #ffff;
+}
