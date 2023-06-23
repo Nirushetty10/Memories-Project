@@ -15,7 +15,7 @@ nav {
     height: 12vh;
     width: 100%;
     padding: 1rem;
-    background-color: #afb0c2;
+    background-color: #E1E2F3;
 
 }
 
@@ -32,7 +32,6 @@ nav .btns {
     height: 2.5rem;
     font-family: "Poppins";
     font-weight: 700;
-
 }
 
 nav .btns:hover {
@@ -49,12 +48,11 @@ nav .button-div {
 }
 
 .container {
-
-    background-image: linear-gradient(rgba(16, 54, 226, 0.4), rgba(0, 89, 255, 0.8));
+    background-color: #E1E2F3;
     padding-top: 2rem;
     height: 88vh;
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
 
@@ -69,9 +67,17 @@ nav .button-div {
 }
 
 .singup-div {
+    box-shadow: 3px 15px 32px 8px #5c5252;
+}
+
+.image-div {
+    box-shadow: 9px 15px 25px 3px #5c5252;
+}
+
+.singup-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #ffff;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -82,13 +88,12 @@ nav .button-div {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 10%;
+    height: 15%;
 }
 
 .image-div {
-    position: relative;
     border-top-right-radius: 1rem;
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +102,8 @@ nav .button-div {
 
 .image-div img {
     width: 95%;
-    height: 85%;
-    border-radius: 2.5rem;
+    height: 95%;
+    border-radius: 2.8em;
     object-fit: cover;
 }
 
@@ -109,7 +114,7 @@ nav .button-div {
 
 .singup-div form>div {
     margin: 0 3rem;
-    height: 20%;
+    height: 24%;
     display: flex;
     flex-direction: column;
 
@@ -155,109 +160,48 @@ label {
     color: #f80000;
 }
 
-.contianer-visible {
+.home-container {
     display: flex;
-}
-
-.exit-icon {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-
-}
-
-/* grid layout design css */
-
-.display-container {
-
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    font-family: Poppins;
+    height: 88vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   grid-auto-rows: 490px;
-    justify-items: center;
-    row-gap: 20px;
-    min-height: 88vh;
-    padding: 1.5rem;
-    background-image: linear-gradient(rgba(317, 175, 164, 0.7), rgba(59, 114, 114, 0.6));
-
-
-}
-.card-display{
-    display: none;
+    position: relative;
+    background-color: #a6a9d8;
+    background-image: linear-gradient(315deg, #7381c9 0%, #8994d6 74%);
 }
 
-.card-container {
-    border: 1px solid rgb(231, 219, 219);
-    width: 340px;
-    height: 490px;
-    border-radius: 10px;
-}
 
-.card-container .image-content {
-    width: 100%;
-    height: 50%;
-
-}
-
-.desc-content {
-    height: 30%;
-    padding: 10px;
-}
-
-.title-content {
-    height: 10%;
+.draw-div {
     display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 40%;
+    background: url("wave3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading-div{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-.bottom-content {
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.card-container .image-content img {
-    height: 100%;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-    object-position: center;
+    height: 60%;
 }
 
-.title-content h2 {
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    color: #000;
+.home-container button {
+    font-family: Poppins;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: rgb(8, 8, 8);
+    color: #ffff;
 
 }
-
-.desc-content p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #3d3b3b;
-    line-height: 20px;
-}
-
-.empty-heart, .filled-heart, #delete-button {
-    cursor: pointer;
-}
-
-#delete-button:hover {
-    transform: translateY(-20px);
-}
-
-#date-memory h4 {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(34, 32, 31);
-
-}
-.hidden-heart{
-    display: none;
+#join-btn{
+    background-color: rgb(255, 179, 80);
+    color: #ffff;
 }

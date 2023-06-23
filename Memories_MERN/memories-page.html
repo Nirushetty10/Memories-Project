@@ -36,7 +36,10 @@
           <div id="date-memory">
             <h4 id="dateEle"></h4>
           </div>
-          <div id="empty-heart"><i class="fa-regular fa-heart" style="color: #1d1e20;"></i></div>
+          <div class="empty-heart hidden-heart">
+            <i class="fa-regular fa-heart empty-heart-icon" style="color: #1d1e20;"></i>
+        </div>
+          <div class="filled-heart hidden-heart"> <i class="fa-solid fa-heart filled-heart-icon"  style="color: #c71f1f;"></i></div>
           <div id="delete-button"><i class="fa-solid fa-trash"></i></div>
         </div>
       </div>
@@ -45,7 +48,7 @@
           <div class="signup-head">
             <h2>Create your Memory</h2>
           </div>
-          <form method="post">
+          <form method="post" enctype="multipart/form-data">
             <div>
               <label for="title-input">Title</label>
               <input type="text" name="title-input" id="title-input" />
@@ -58,7 +61,7 @@
               <label for="image-input">Image</label>
               <input
                 type="file"
-                name="image-input"
+                name="imageInput"
                 id="image-input"
                 accept=".jpg, .png,"
                 multiple
